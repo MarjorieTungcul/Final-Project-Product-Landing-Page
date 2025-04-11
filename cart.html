@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step Mates</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Step Mates</h1>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <i class="bx bx-search"></i>
+            <ul id="suggestions" class="suggestions-list"></ul>
+        </div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><div class="bx bx-cart" id="cart-icon"></div></a></li>
+            <li><div class="bx bx-moon" id="darkmode"></div></li>
+        </ul>
+        
+    </header>
+
+        <section class="cart" id="cart">
+            <div class="cart-text">
+                <h2>Your Cart</h2>
+                <p><strong>You are eligible for standard free shipping here in the Philippines.</strong></p>
+            </div>
+            <div class="header-grid">
+                <div class="product-col">Product</div>
+                <div class="price-col">Unit Price</div>
+                <div class="qty-col">Quantity</div>
+                <div class="total-col">Total</div>
+            </div>
+
+            <div id="cart-items"></div>
+    <div class="checkout-container">
+        <div class="checkout-details">
+            <div class="grand-total">
+                <span>Grand Total: </span><span id="grand-total">₱0.00</span>
+            </div>
+
+            <div class="checkout-message">
+                <p>Cash on Delivery (COD) Only. Payment will be collected upon delivery. Please ensure the exact amount is prepared.</p>
+                <p>Standard delivery within 3-7 business days. Delivery times may vary based on location.</p>
+                <p>Once you proceed with checkout, your order will be automatically processed.</p>
+            </div>
+
+        <button id="checkout-btn" class="checkout-btn" >Checkout</button>
+        </div>  
+    </div>
+        <br><br>
+    </section>
+          
+    <footer id="footer">
+        <div class="contact-box">
+            <h3>Follow Us:</h3>
+            <div class="social">
+                <a href="https://www.facebook.com"><i class='bx bxl-facebook' >Facebook</i></a>
+                <a href="https://www.telegram.org"><i class='bx bxl-telegram' >Telegram</i></a>
+                <a href="https://www.instagram.com"><i class='bx bxl-instagram' >Instagram</i></a>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h3>Quick Links:</h3>
+            <div class="links">
+                <ul>
+                    <li><a href="#Terms & Conditions" id="termsLink">Terms & Conditions</a></li>
+                    <li><a href="#Privacy Policy" id="privacyLink">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="termsModal" class="modal">
+            <div class="modal-content">
+                <button id="closeModal" class="close-btn">&times;</button>
+                <h2>Terms & Conditions</h2>
+                <p>Welcome to Sneaker Haven! By using our website and purchasing our products, it is understood that you have read, fully comprehended, and agreed to be bound by these Terms. If any part of these Terms is not acceptable, please refrain from using the website or making a purchase. Please read them carefully.</p>
+                <p class="subheader">1. General Terms</p>
+                <p>These Terms and Conditions apply to all purchases made through this website. We reserve the right to modify these terms at any time without prior notice.</p>
+                <p class="subheader">2. Ordering and Payment</p>
+                <p>All orders placed on our website are subject to availability. We only accept Cash on Delivery (COD).</p>  
+                <p class="subheader">3. Shipping and Delivery</p>
+                <p>Delivery time is 3-7 business days after order confirmation. Customers must provide accurate shipping details.</p>
+                <p class="subheader">4. Returns and Exchanges</p>
+                <p>All sales are final. We do not accept returns. Exchanges are allowed only for defective or incorrect items within 4-7 days of delivery.</p>
+                <p class="subheader">5. Pricing and Promotions</p>
+                <p>All prices on our website are in Philippine Peso and are subject to change without prior notice. </p>
+                <p class="subheader">6. Limitation of Liability</p>
+                <p>We are not responsible for lost or stolen items once delivery is completed.</p>
+            </div>
+        </div>
+
+        <div id="privacyModal" class="pmodal">
+            <div class="pmodal-content">
+                <button id="pcloseModal" class="pclose-btn">&times;</button>
+                <h2>Privacy Policy</h2>
+                <p> At Sneaker Haven, we value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, store, and safeguard your data when you visit our website or make a purchase.</p>
+                <p class="psubheader">1. Information We Collect</p>
+                <p>Personal Details: Name, phone number, and delivery address. Order Information: Products purchased and transaction details. We do not collect or store payment details, as we only accept Cash on Delivery (COD).</p>
+                <p class="psubheader">2. How We Use Your Information</p>
+                <p>To process and deliver your order. To contact you regarding your order. To send promotional updates (only if subscribed). To improve our services and website experience.</p>  
+                <p class="psubheader">3. Data Protection and Security</p>
+                <p>We implement strict security measures to protect your personal data. We do not share or sell your information to third parties, except for delivery purposes.</p>
+                <p class="psubheader">4. Your Rights</p>
+                <p>You have the right to request updates, corrections, or deletion of your data. You can opt-out of receiving promotional messages at any time.</p>
+                <p class="psubheader">5. Changes to This Policy</p>
+                <p>We may update this policy periodically. Changes will be posted on this page.</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h3>Contact Us:</h3>
+            <div class="address">
+                <i class='bx bxs-map'>
+                    <a href="https://www.google.com/maps?q=Governor+Park+Road,+Baguio+City,+2600+Cordillera+Administrative+Region,+Philippines" target="_blank">
+                        <span>Governor Park Road, Baguio City, 2600 Cordillera Administrative Region, Philippines</span>
+                    </a>
+                </i>
+                <i class='bx bxs-phone'>
+                    <a href="tel:+639123456789">
+                        <span>+63 912 345 6789</span>
+                    </a>
+                </i>
+                <i class='bx bxs-envelope'>
+                    <a href="mailto:StepMates@gmail.com">
+                        <span>StepMates@gmail.com</span>
+                    </a>
+                </i>
+            </div>
+        </div>
+
+            <p class="copyright">Copyright © 2025 Step Mates.All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>

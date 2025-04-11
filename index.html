@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step Mates</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <h1>Step Mates</h1>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <i class="bx bx-search"></i>
+            <ul id="suggestions" class="suggestions-list"></ul>
+        </div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><div class="bx bx-cart" id="cart-icon"></div></a></li>
+            <li><div class="bx bx-moon" id="darkmode"></div></li>
+        </ul>
+    </header>
+
+    <!--Section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Welcome to Step Mates</h1>
+            <h2>Your One-Stop Shop <br> for Premium Sneakers</h2>
+            <a href="products.html"><button>Explore Products</button></a>
+        </div>
+        <div class="home-img">
+            <img src="images/pic1.jpg" alt="Shoes">
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products" id="products">
+        <div class="heading">
+            <span>Featured Products</span>
+            <h2>Top Picks of the Week</h2>
+        </div>  
+        <div class="menu-container">
+            <div class="box" data-id="1" data-name="Fila Disruptor 2" data-price="3799.00" data-image="images/FilaDisruptor2.jpg">
+                <div class="box-img">
+                    <img src="images/FilaDisruptor2.jpg" alt="Fila Disruptor 2">
+                </div>
+                <h2>Fila Disruptor 2</h2>
+                <span>₱3,799.00</span>
+                <div class="btn-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="open-modal-btn" data-modal="modal-1">View Info</button>
+                </div>
+            </div>
+
+            <div class="product-modal" id="modal-1">
+                <div class="product-modal-content">
+                    <span class="product-close-btn">&times;</span>
+                    <img src="images/FilaDisruptor2.jpg" alt="Fila Disruptor 2" class="product-modal-image">
+                    <h2 class="product-modal-title">Fila Disruptor 2</h2>
+                    <p class="product-modal-description">
+                        A chunky sneaker with a retro 90s aesthetic, featuring a thick sole and synthetic leather upper. It offers a bold, street-style look with embroidered Fila branding.<br><strong>FREE SIZE</strong> 
+                    </p>
+                    <p class="product-modal-price">₱3,799.00</p>
+                </div>
+            </div>
+            
+            <div class="box" data-id="11" data-name="Puma RS-X3" data-price="3799.00" data-image="images/PumaRSX3.jpg">
+                <div class="box-img">
+                    <img src="images/PumaRSX3.jpg" alt="Puma RS-X3">
+                </div>
+                <h2>Puma RS-X3 </h2>
+                <span>₱3,799.00</span>
+                <div class="btn-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="open-modal-btn" data-modal="modal-11">View Info</button>
+                </div>
+            </div>
+
+            <div class="product-modal" id="modal-11">
+                <div class="product-modal-content">
+                    <span class="product-close-btn">&times;</span>
+                    <img src="images/PumaRSX3.jpg" alt="PumaRSX3" class="product-modal-image">
+                    <h2 class="product-modal-title">Puma RS X3</h2>
+                    <p class="product-modal-description">
+                        A chunky, futuristic sneaker with a bold design and Puma’s Running System cushioning. It combines comfort and style with a mix of materials and striking colorways.<br><strong>FREE SIZE</strong> 
+                    </p>
+                    <p class="product-modal-price">₱3,799.00</p>
+                </div>
+            </div>
+
+            <div class="box" data-id="15" data-name="Asics Gel-Lyte III" data-price="3799.00" data-image="images/AsicsGelLyteIII.jpg">
+                <div class="box-img">
+                    <img src="images/AsicsGelLyteIII.jpg" alt="Asics Gel-Lyte III">
+                </div>
+                <h2>Asics Gel-Lyte III</h2>
+                <span>₱3,799.00</span>
+                <div class="btn-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="open-modal-btn" data-modal="modal-15">View Info</button>
+                </div>
+            </div>
+
+            <div class="product-modal" id="modal-15">
+                <div class="product-modal-content">
+                    <span class="product-close-btn">&times;</span>
+                    <img src="images/AsicsGelLyteIII.jpg" alt="AsicsGelLyteIII" class="product-modal-image">
+                    <h2 class="product-modal-title">Asics Gel Lyte III</h2>
+                    <p class="product-modal-description">
+                        A retro running shoe known for its split tongue design and GEL cushioning. It provides lightweight comfort and a stylish, vintage aesthetic.<br><strong>FREE SIZE</strong> 
+                    </p>
+                    <p class="product-modal-price">₱3,799.00</p>
+                </div>
+            </div>
+
+
+            <div class="box" data-id="2" data-name="Fila Venom" data-price="3799.00" data-image="images/FIlaVenom.jpg">
+                <div class="box-img">
+                    <img src="images/FIlaVenom.jpg" alt="Fila Venom">
+                </div>
+                <h2>Fila Venom</h2>
+                <span>₱3,799.00</span>
+                <div class="btn-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="open-modal-btn" data-modal="modal-2">View Info</button>
+                </div>
+            </div>
+
+            <div class="product-modal" id="modal-2">
+                <div class="product-modal-content">
+                    <span class="product-close-btn">&times;</span>
+                    <img src="images/FIlaVenom.jpg" alt="Fila Venom" class="product-modal-image">
+                    <h2 class="product-modal-title">Fila Venom</h2>
+                    <p class="product-modal-description">
+                        A retro running-inspired sneaker with a layered design and mesh-suede construction. It provides a lightweight feel and bold color-blocking for a vintage athletic vibe.<br><strong>FREE SIZE</strong> 
+                    </p>
+                    <p class="product-modal-price">₱3,799.00</p>
+                </div>
+            </div>
+
+            <div class="box" data-id="8" data-name="Vans Sk8 Hi" data-price="3799.00" data-image="images/VansSk8Hi.jpg">
+                <div class="box-img">
+                    <img src="images/VansSk8Hi.jpg" alt="Vans Sk8-Hi">
+                </div>
+                <h2>Vans Sk8-Hi</h2>
+                <span>₱3,799.00</span>
+                <div class="btn-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="open-modal-btn" data-modal="modal-8">View Info</button>
+                </div>
+            </div>
+
+            <div class="product-modal" id="modal-8">
+                <div class="product-modal-content">
+                    <span class="product-close-btn">&times;</span>
+                    <img src="images/VansSk8Hi.jpg" alt="VansSk8Hi" class="product-modal-image">
+                    <h2 class="product-modal-title">Vans Sk8 Hi</h2>
+                    <p class="product-modal-description">
+                        A high-top skate shoe made of durable canvas and suede with reinforced toe caps. It provides ankle support and features the signature waffle outsole for grip.<br><strong>FREE SIZE</strong> 
+                    </p>
+                    <p class="product-modal-price">₱3,799.00</p>
+                </div>
+            </div>
+
+            <div class="box" data-id="4" data-name="Nike Air Zoom" data-price="3799.00" data-image="images/NikeAirZoom.jpg">
+                <div class="box-img">
+                    <img src="images/NikeAirZoom.jpg" alt="Nike Air Zoom">
+                </div>
+                <h2>Nike Air Zoom</h2>
+                <span>₱3,799.00</span>
+                <div class="btn-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="open-modal-btn" data-modal="modal-4">View Info</button>
+                </div>
+            </div>
+
+            <div class="product-modal" id="modal-4">
+                <div class="product-modal-content">
+                    <span class="product-close-btn">&times;</span>
+                    <img src="images/NikeAirZoom.jpg" alt="Nike Air Zoom" class="product-modal-image">
+                    <h2 class="product-modal-title">Nike Air Zoom</h2>
+                    <p class="product-modal-description">
+                        A performance sneaker line featuring Air Zoom cushioning for responsive comfort. It is designed for speed and agility in running and basketball shoes.<br><strong>FREE SIZE</strong> 
+                    </p>
+                    <p class="product-modal-price">₱3,799.00</p>
+                </div>
+            </div>
+
+            <div class="box" data-id="12" data-name="Puma Cali" data-price="3799.00" data-image="images/PumaCali.jpg">
+                <div class="box-img">
+                    <img src="images/PumaCali.jpg" alt="Puma Cali">
+                </div>
+                <h2>Puma Cali</h2>
+                <span>₱3,799.00</span>
+                <div class="btn-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="open-modal-btn" data-modal="modal-12">View Info</button>
+                </div>
+            </div>
+
+            <div class="product-modal" id="modal-12">
+                <div class="product-modal-content">
+                    <span class="product-close-btn">&times;</span>
+                    <img src="images/PumaCali.jpg" alt="PumaCali" class="product-modal-image">
+                    <h2 class="product-modal-title">Puma Cali</h2>
+                    <p class="product-modal-description">
+                        A retro tennis-inspired sneaker with a thick rubber sole and sleek leather upper. It offers a laid-back, casual look with a slightly elevated platform<br><strong>FREE SIZE</strong> 
+                    </p>
+                    <p class="product-modal-price">₱3,799.00</p>
+                </div>
+            </div>
+
+            <div class="box" data-id="7" data-name="Vans Era" data-price="3799.00" data-image="images/VansEra.jpg">
+                <div class="box-img">
+                    <img src="images/VansEra.jpg" alt="Vans Era">
+                </div>
+                <h2>Vans Era</h2>
+                <span>₱3,799.00</span>
+                <div class="btn-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="open-modal-btn" data-modal="modal-7">View Info</button>
+                </div>
+            </div>
+
+            <div class="product-modal" id="modal-7">
+                <div class="product-modal-content">
+                    <span class="product-close-btn">&times;</span>
+                    <img src="images/VansEra.jpg" alt="VansEra" class="product-modal-image">
+                    <h2 class="product-modal-title">Vans Era</h2>
+                    <p class="product-modal-description">
+                        A low-top skate shoe with a padded collar for extra comfort and a sturdy canvas upper. Its rubber waffle sole ensures superior traction and durability.<br><strong>FREE SIZE</strong> 
+                    </p>
+                    <p class="product-modal-price">₱3,799.00</p>
+                </div>
+            </div>
+
+            <div class="box" data-id="3" data-name="Fila Disruptor" data-price="3799.00" data-image="images/FilaDisruptor.jpg">
+                <div class="box-img">
+                    <img src="images/FilaDisruptor.jpg" alt="Fila Disruptor">
+                </div>
+                <h2>Fila Disruptor</h2>
+                <span>₱3,799.00</span>
+                <div class="btn-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="open-modal-btn" data-modal="modal-3">View Info</button>
+                </div>
+            </div>
+
+            <div class="product-modal" id="modal-3">
+                <div class="product-modal-content">
+                    <span class="product-close-btn">&times;</span>
+                    <img src="images/FilaDisruptor.jpg" alt="FilaDisruptor" class="product-modal-image">
+                    <h2 class="product-modal-title">Fila Disruptor</h2>
+                    <p class="product-modal-description">
+                        A The original Disruptor model, known for its oversized sole and sporty silhouette. It features a durable upper with classic Fila branding. <br><strong>FREE SIZE</strong> 
+                    </p>
+                    <p class="product-modal-price">₱3,799.00</p>
+                </div>
+            </div>
+
+            <div class="box" data-id="15" data-name="Asics Gel-Lyte III" data-price="3799.00" data-image="images/AsicsGelLyteIII.jpg">
+                <div class="box-img">
+                    <img src="images/AsicsGelLyte.jpg" alt="Asics Gel-Lyte">
+                </div>
+                <h2>Asics Gel-Lyte</h2>
+                <span>₱3,799.00</span>
+                <div class="btn-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="open-modal-btn" data-modal="modal-13">View Info</button>
+                </div>
+            </div>
+
+            <div class="product-modal" id="modal-13">
+                <div class="product-modal-content">
+                    <span class="product-close-btn">&times;</span>
+                    <img src="images/AsicsGelLyte.jpg" alt="Asics Gel Lyte" class="product-modal-image">
+                    <h2 class="product-modal-title">Asics Gel Lyte</h2>
+                    <p class="product-modal-description">
+                        A general line of Asics sneakers featuring GEL technology for shock absorption and comfort. These sneakers blend sporty functionality with retro-inspired designs.<br><strong>FREE SIZE</strong> 
+                    </p>
+                    <p class="product-modal-price">₱3,799.00</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/aboutpic.jpg" alt="Shoes">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We bring you the finest premium sneakers.</h2>
+            <p>At Step Mates, we specialize in high-quality sneakers that combine luxury, comfort, and style. From limited-edition designs to timeless classics, our collection is curated for those who appreciate craftsmanship and exclusivity. Each pair is made with the finest materials to ensure you walk with confidence and sophistication.</p>
+            <a href="about.html"><button>Learn More</button></a>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="contact-box">
+            <h3>Follow Us:</h3>
+            <div class="social">
+                <a href="https://www.facebook.com"><i class='bx bxl-facebook' >Facebook</i></a>
+                <a href="https://www.telegram.org"><i class='bx bxl-telegram' >Telegram</i></a>
+                <a href="https://www.instagram.com"><i class='bx bxl-instagram' >Instagram</i></a>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h3>Quick Links:</h3>
+            <div class="links">
+                <ul>
+                    <li><a href="#Terms & Conditions" id="termsLink">Terms & Conditions</a></li>
+                    <li><a href="#Privacy Policy" id="privacyLink">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="termsModal" class="modal">
+            <div class="modal-content">
+                <button id="closeModal" class="close-btn">&times;</button>
+                <h2>Terms & Conditions</h2>
+                <p>Welcome to Sneaker Haven! By using our website and purchasing our products, it is understood that you have read, fully comprehended, and agreed to be bound by these Terms. If any part of these Terms is not acceptable, please refrain from using the website or making a purchase. Please read them carefully.</p>
+                <p class="subheader">1. General Terms</p>
+                <p>These Terms and Conditions apply to all purchases made through this website. We reserve the right to modify these terms at any time without prior notice.</p>
+                <p class="subheader">2. Ordering and Payment</p>
+                <p>All orders placed on our website are subject to availability. We only accept Cash on Delivery (COD).</p>  
+                <p class="subheader">3. Shipping and Delivery</p>
+                <p>Delivery time is 3-7 business days after order confirmation. Customers must provide accurate shipping details.</p>
+                <p class="subheader">4. Returns and Exchanges</p>
+                <p>All sales are final. We do not accept returns. Exchanges are allowed only for defective or incorrect items within 4-7 days of delivery.</p>
+                <p class="subheader">5. Pricing and Promotions</p>
+                <p>All prices on our website are in Philippine Peso and are subject to change without prior notice. </p>
+                <p class="subheader">6. Limitation of Liability</p>
+                <p>We are not responsible for lost or stolen items once delivery is completed.</p>
+            </div>
+        </div>
+
+        <div id="privacyModal" class="pmodal">
+            <div class="pmodal-content">
+                <button id="pcloseModal" class="pclose-btn">&times;</button>
+                <h2>Privacy Policy</h2>
+                <p> At Sneaker Haven, we value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, store, and safeguard your data when you visit our website or make a purchase.</p>
+                <p class="psubheader">1. Information We Collect</p>
+                <p>Personal Details: Name, phone number, and delivery address. Order Information: Products purchased and transaction details. We do not collect or store payment details, as we only accept Cash on Delivery (COD).</p>
+                <p class="psubheader">2. How We Use Your Information</p>
+                <p>To process and deliver your order. To contact you regarding your order. To send promotional updates (only if subscribed). To improve our services and website experience.</p>  
+                <p class="psubheader">3. Data Protection and Security</p>
+                <p>We implement strict security measures to protect your personal data. We do not share or sell your information to third parties, except for delivery purposes.</p>
+                <p class="psubheader">4. Your Rights</p>
+                <p>You have the right to request updates, corrections, or deletion of your data. You can opt-out of receiving promotional messages at any time.</p>
+                <p class="psubheader">5. Changes to This Policy</p>
+                <p>We may update this policy periodically. Changes will be posted on this page.</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h3>Contact Us:</h3>
+            <div class="address">
+                <i class='bx bxs-map'>
+                    <a href="https://www.google.com/maps?q=Governor+Park+Road,+Baguio+City,+2600+Cordillera+Administrative+Region,+Philippines" target="_blank">
+                        <span>Governor Park Road, Baguio City, 2600 Cordillera Administrative Region, Philippines</span>
+                    </a>
+                </i>
+                <i class='bx bxs-phone'>
+                    <a href="tel:+639123456789">
+                        <span>+63 912 345 6789</span>
+                    </a>
+                </i>
+                <i class='bx bxs-envelope'>
+                    <a href="mailto:StepMates@gmail.com">
+                        <span>StepMates@gmail.com</span>
+                    </a>
+                </i>
+            </div>
+        </div>
+
+            <p class="copyright">Copyright © 2025 Step Mates.All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
